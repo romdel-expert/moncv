@@ -1,38 +1,282 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  /* font-family: 'Kaushan Script', cursive;
+  font-family: 'Playfair Display', serif;; */
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 253, 250);
+}
+
+nav{
+  border-right: 5px solid rgb(185, 109, 9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  background-color: rgb(145, 67, 22);
+  width: 24%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, nav{
+  font-family: 'heebo', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav img{
+  border-radius: 50%;
+  width: 100px;
+  margin: 100px 0 0px 0;
+  border: 5px solid rgb(185, 109, 9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+nav ul li{
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.cvContent{
+  border-right: 2px solid rgb(235, 224, 224);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15%;
+  width: 45%;
+  background-color: rgb(248, 244, 241);
+  overflow-y: scroll;
+}
+
+
+nav li{
+  list-style: none;
+  font-size: 80%;
+  letter-spacing: 2px;
+}
+
+nav li a:hover{
+  color: rgb(187, 196, 108);
+}
+
+.active{
+  color: rgb(187, 196, 108);
+}
+
+.contact{
+  border-bottom: .5px solid rgb(248, 246, 246);
+  color: rgb(252, 253, 253);
+  font-size: 80%;
+  text-align: left;
+  padding: 60px 60px 0px 60px;
+}
+
+.contact > div{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.contact > div a{
+  margin: 0 10px;
+}
+
+.contact > p{
   display: flex;
-  flex-direction: column;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+}
+
+.contact > p > i{
+  font-size: 130%;
+}
+
+.contact > p > div{
+  margin: 0 20px;
+}
+
+
+
+
+
+/* Mise en forme de la page d'accueil */
+
+.contentHome{
+  padding: 60px;
+  text-align: justify;
+}
+
+.contentHome h1{
+  color: rgb(145, 67, 22);
+  font-weight: bold;
+  font-size: 3rem;
+} 
+
+.contentHome hr{
+  margin: 40px 0;
+  width: 20%;
+  border: 2px solid rgb(179, 177, 175);
+}
+
+h2{
+  color: rgb(192, 134, 101);
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+} 
+
+.contentHome p{
+  color: rgb(85, 80, 80);
+  font-weight: bold;
+  font-size: 90%;
+  margin: 30px 0;
+}
+
+.infoMoreHome{
+  border: .5px solid black;
+}
+
+
+
+
+/* Mise en page de la page de compétences */
+
+.contentExp, .contentForm, .contentSkills{
+  padding: 60px;
+}
+
+.contentExp > div{
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+
+.contentExp h2{
+  margin: 40px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3{
+  border: 1px solid rgb(145, 67, 22);
+  border-left: 0;
+  border-right: 0;
+  background-color: rgb(182, 173, 155);
+  margin: 40px 0 0px 0;
+  font-weight: bold;
+  color: rgb(12, 12, 12);
+  text-transform: none;
+  padding: 2px 40px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 90%;
+}
+
+h3, h4, .titleFormation div, .titleFormation div span{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+.contentExp span{
+  font-size: 110%;
+  color: rgb(145, 128, 128);
+}
+.contentExp div > div{
+  border-bottom: 1px solid rgb(145, 67, 22);
+  padding-bottom: 5px;
+  margin: 10px 0;
+}
+
+.contentExp p{
+  font-size: 80%;
+}
+
+.contentExp ul{
+  font-size: 80%;
+  margin: 10px 0px 10px 40px;
+  font-style: italic;
+}
+
+.colorCvText{
+  color: rgb(145, 67, 22);
+}
+
+
+
+
+
+
+
+
+
+
+
+.titleFormation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentForm h4{
+  margin: 20px 0;
+}
+
+.contentForm ul{
+  font-size: 80%;
+  margin: 10px 0px 10px 40px;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+.blocSkill{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .5px solid rgb(145, 67, 22);
+  padding: 20px;
+}
+
+.blocSkill > div{
+  font-weight: bold;
+}
+
+.titleComp, .titleLevel{
+  font-family: 'Oswald', sans-serif;
+}
+
+.titleLevel{
+  color: rgb(54, 51, 51);
+  font-size: 90%;
+}
+
+.titleComp{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(145, 67, 22);
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.blocSkill ul{
+  list-style: none;
+  font-size: 80%;
+  margin: 10px 0px 0px 10px;
+  color: rgb(92, 88, 88);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caseSkill{
+  border: 1px solid transparent;
+  display: flex;
+  width: 50%;
+  justify-content: first space-evenly;
+}
+.caseSkill > div{
+  border: 1px solid transparent;
+  width: 50%;
 }
